@@ -67,3 +67,5 @@ xxx_lse_sign_file
 *.rpt
 *_Implmnt
 !*_bitmap.bin
+
+tags
