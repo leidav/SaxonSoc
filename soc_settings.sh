@@ -1,0 +1,4 @@
+export SDRAM_SIZE=32
+export SAXON_CPU_COUNT=1
+export FPGA_SIZE=85
+export SAXON_FPU=0

@@ -1,0 +1,13 @@
+#!/bin/sh
+source ./soc_settings.sh
+
+CURRENT_PATH=`pwd`
+RAM_TIMING="MT48LC16M16A2_6A_ps"
+SOFTWARE_PATH="$CURRENT_PATH/software/standalone"
+BSP_PATH="$CURRENT_PATH/bsp/radiona/ulx3s/smp"
+
+SPECIFIC_SOFTWARE_PATH="$SOFTWARE_PATH/$1"
+
+# build booloader
+make -C $SPECIFIC_SOFTWARE_PATH clean all BSP_PATH=$BSP_PATH CFLAGS_ARGS="-DSDRAM_TIMING=$RAM_TIMING"
+
