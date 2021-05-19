@@ -7,6 +7,8 @@ BOOTLOADER_PATH="./software/standalone/bootloader"
 SYNTHESIS_PATH="./hardware/synthesis/radiona/ulx3s/smp"
 BSP_PATH="$CURRENT_PATH/bsp/radiona/ulx3s/smp"
 
+./build_software.sh bootloader
+
 # generate netlist
 sbt "runMain saxon.board.radiona.ulx3s.Ulx3sSmp $SDRAM_SIZE"
 
