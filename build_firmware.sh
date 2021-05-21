@@ -35,8 +35,8 @@ fi
 
 ( cd $BUILD_PATH && make O=$PWD BR2_EXTERNAL=$BUILD_ROOT_SPINAL_SAXON_PATH -C $BUILD_ROOT_PATH $BOARD_CONFIG )
 
-#make -C $BUILD_PATH menuconfig
 cd $BUILD_PATH
+make menuconfig
 make clean
 make -j2
 #make -C $BUILD_PATH -j2

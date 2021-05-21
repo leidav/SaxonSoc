@@ -380,6 +380,7 @@ object Ulx3sSmp {
 
     Ulx3sSmpAbstract.default(system, includeFpu)
     system.ramA.hexInit.load("software/standalone/bootloader/build/bootloader.hex")
+    //system.ramA.hexInit.load("software/standalone/bootloaderStandalone/build/bootloaderStandalone.hex")
 
     g
   }
